@@ -1,0 +1,6 @@
+url_google = 'http://www.google.com'
+url_elerning = 'https://e-learning.unpam.ac.id/'
+nim1 = '201011402055'
+password1 = '211298'
+nim2 = '201011402055'
+password2 = '000000'

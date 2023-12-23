@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231222 18:50:01.185" rpa="false" schemaversion="4">
+<suite id="s1" name="Test1" source="D:\3\2\1\are you ready\let's go\TESTING\test1.robot">
+<test id="s1-t1" name="Login elearning Gagal" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_elerning}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231222 18:50:01.721" level="INFO">Opening browser 'chrome' to base url 'https://e-learning.unpam.ac.id/'.</msg>
+<status status="PASS" starttime="20231222 18:50:01.721" endtime="20231222 18:50:05.717"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231222 18:50:05.717" endtime="20231222 18:50:05.841"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=list-inline-item</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231222 18:50:05.841" level="INFO">Clicking element 'class=list-inline-item'.</msg>
+<status status="PASS" starttime="20231222 18:50:05.841" endtime="20231222 18:50:06.134"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=login_username</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231222 18:50:06.134" endtime="20231222 18:50:06.327"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=login_username</arg>
+<arg>${nim2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 18:50:06.329" level="INFO">Typing text '201011402055' into text field 'id=login_username'.</msg>
+<status status="PASS" starttime="20231222 18:50:06.328" endtime="20231222 18:50:06.512"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=login_password</arg>
+<arg>${password2}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 18:50:06.512" level="INFO">Typing password into text field 'id=login_password'.</msg>
+<msg timestamp="20231222 18:50:06.563" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231222 18:50:06.664" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231222 18:50:06.512" endtime="20231222 18:50:06.664"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=btn-log</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231222 18:50:06.664" level="INFO">Clicking button 'class=btn-log'.</msg>
+<status status="PASS" starttime="20231222 18:50:06.664" endtime="20231222 18:50:07.499"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Invalid login, please try again</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231222 18:50:07.524" level="INFO">Current page contains text 'Invalid login, please try again'.</msg>
+<status status="PASS" starttime="20231222 18:50:07.500" endtime="20231222 18:50:07.524"/>
+</kw>
+<status status="PASS" starttime="20231222 18:50:01.720" endtime="20231222 18:50:07.524"/>
+</test>
+<test id="s1-t2" name="Login elearning success" line="19">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_elerning}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231222 18:50:07.528" level="INFO">Opening browser 'chrome' to base url 'https://e-learning.unpam.ac.id/'.</msg>
+<status status="PASS" starttime="20231222 18:50:07.524" endtime="20231222 18:50:10.872"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231222 18:50:10.872" endtime="20231222 18:50:10.996"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=list-inline-item</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231222 18:50:10.997" level="INFO">Clicking element 'class=list-inline-item'.</msg>
+<status status="PASS" starttime="20231222 18:50:10.996" endtime="20231222 18:50:11.305"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=login_username</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231222 18:50:11.306" endtime="20231222 18:50:11.361"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=login_username</arg>
+<arg>${nim1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 18:50:11.361" level="INFO">Typing text '201011400173' into text field 'id=login_username'.</msg>
+<status status="PASS" starttime="20231222 18:50:11.361" endtime="20231222 18:50:11.743"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=login_password</arg>
+<arg>${password1}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 18:50:11.759" level="INFO">Typing password into text field 'id=login_password'.</msg>
+<msg timestamp="20231222 18:50:11.831" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231222 18:50:11.912" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231222 18:50:11.743" endtime="20231222 18:50:11.912"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class=btn-log</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231222 18:50:11.912" level="INFO">Clicking button 'class=btn-log'.</msg>
+<status status="PASS" starttime="20231222 18:50:11.912" endtime="20231222 18:50:13.225"/>
+</kw>
+<status status="PASS" starttime="20231222 18:50:07.524" endtime="20231222 18:50:13.225"/>
+</test>
+<status status="PASS" starttime="20231222 18:50:01.185" endtime="20231222 18:50:13.227"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
